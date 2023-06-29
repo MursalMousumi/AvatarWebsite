@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/adminNav.ejs') %>
+
+<head>
+  <title>Update Your Element</title>
+</head>
+
+<body id="updateElement">
+  <header> 
+    <h1 id="updateHeader">
+    Update Your Element:
+    </h1>
+  </header>
+
+<div class = "whiteBackground row justify-content-md-center">
+
+  <form action="/element/edit" method="POST" runat="server">
+    <input type="hidden" name="element" value="" id="inputElement">
+
+    Username: <input type="text" name="username" id="user" required> <br>
+
+    New Element: <input type="text" name="newElement" id="inputElement" required> <br>
+
+    <button>Update Element</button>
+  
+  </form>
+  <% if (typeof message != "undefined" ) { %>
+    <%= message %>
+  <% } %>
+
+</div>  
+  
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/adminNav.ejs') %>
+
+<head>
+  <title>Update Your Nation</title>
+</head>
+
+<body id="updateNation">
+  <header> 
+    <h1 id="updateHeader">
+    Update Your Nation:
+    </h1>
+  </header>
+
+<div class = "whiteBackground row justify-content-md-center">
+
+  <form action="/nation/edit" method="POST" runat="server">
+    <input type="hidden" name="nation" value="" id="inputNation">
+
+    Username: <input type="text" name="username" id="user" required> <br>
+
+    New Nation: <input type="text" name="newNation" id="inputNat" required> <br>
+
+    <button>Update Nation</button>
+  
+  </form>
+  <% if (typeof message != "undefined" ) { %>
+    <%= message %>
+  <% } %>
+
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,43 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/nav.ejs') %>
+
+
+<body id="enemiesPage" >
+
+
+
+
+<div id = "enemyNames" class="whiteBackground">
+<h2>Your Character:</h2> <h4><span id="character" style="color:rgb(50, 99, 26);"> <%=userData[0].charact%> </h4></span>
+
+
+<h3>Enemies: </h3>
+
+  <div id="enemyModal" class="modal"  tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content text-center" style ="background-color: rgb(242, 241, 220);">
+        <div class="modal-header" style="margin: 0 auto;">
+          <h5 class="modal-title">Enemy Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <div id="enemyInfo" class="d-flex flex-column justify-content-center">
+          
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+
+
+
+
+<br>
+
+<%- include("partials/footer.ejs") %>

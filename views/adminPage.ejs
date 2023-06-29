@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/adminNav.ejs') %>
+
+
+
+<body id="adminPage">
+
+
+  <form action="/updateCharact">
+    <div class="d-grid gap-3"> 
+      <button  class="btn btn-info btn-block"> Edit Characters </button>
+    </div> 
+    <br>
+  </form> 
+
+  <form action="/updateNation">
+    <div class="d-grid gap-3">
+      <button class="btn btn-info btn-outline-block"> Edit Nations </button>
+    </div>
+    <br>
+  </form>
+
+  <form action="/updateElement">
+    <div class="d-grid gap-3">
+      <button class="btn btn-info btn-block"> Edit Elements </button>
+    </div>
+    <br>
+  </form>
+
+  <form action="/logout">
+    <button  class="btn btn-danger">
+    Logout </button>
+  </form>
+
+
+</body>
+
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,47 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/nav.ejs') %></nav>
+
+<head>
+  <title>Profile</title>
+</head>
+<body>
+
+<body id = "profile">
+
+<header>
+  <h1>Your Profile</h1>
+</header>
+
+<div class = "whiteBackground row justify-content-md-center">
+
+ 
+  <b>Username:</b>  <%= userData[0].username %> <br>
+  
+
+  <b>Nation:</b> <span id="nation"><%= userData[0].nation %></span>
+  <form action="/updateNation">
+    <button class="btn btn-outline-primary">
+    Change Nation
+    </button>
+  </form>
+
+  <b>Element:</b> <span id = "element"><%= userData[0].element %></span><br>
+    <form action="/updateElement">
+    <button class="btn btn-outline-primary">
+    Change Element
+    </button>
+  </form> 
+
+  <b>Character:</b> <%=userData[0].charact %>
+  <form action="/updateCharact">
+    <button class="btn btn-outline-primary">
+    Change Character
+    </button>
+  </form> 
+ 
+
+</div>
+</body>
+  
+<script src="/js/nationScript.js"></script>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,91 @@
+<%- include("partials/header.ejs") %>
+
+
+<body id="mainPage">
+<h1 id="createAccHeader" class="p-5"> 
+Create new Avatar Account 
+</h1>
+
+<form action="/user/new" method="POST">
+
+  <div id = "loginInfo">
+    Username: <input type="text" name="username"> <br>
+    Password: <input type="password" name="password"> <br>
+  </div>
+
+  <div id="chooseElement">
+    Choose your Element: <br>
+      <input type="radio" id="elementChoice1" name="element" value="Fire">
+      <label for="elementChoice">
+      Fire
+      </label><br>
+      <input type="radio" id="elementChoice2" name="element" value="Water">
+      <label for="elementChoice2">
+      Water
+      </label><br>
+      <input type="radio" id="elementChoice3" name="element" value="Air">
+      <label for="elementChoice3">
+      Air
+      </label><br>
+      <input type="radio" id="elementChoice4" name="element" value="Earth">
+      <label for="elementChoice4">
+      Earth
+      </label><br>
+  </div>
+
+  <div id="chooseNation">
+    Choose your Nation: <br>
+      <input type="radio" id="nationChoice1" name="nation" value="Fire Nation">
+      <label for="nationChoice">
+      Fire Nation
+      </label><br>
+      <input type="radio" id="nationChoice2" name="nation" value="Water Tribe">
+      <label for="nationChoice2">
+      Water Tribe
+      </label><br>
+      <input type="radio" id="nationChoice3" name="nation" value="Air Nomads">
+      <label for="nationChoice3">
+      Air Nomads
+      </label><br>
+      <input type="radio" id="nationChoice4" name="nation" value="Earth Kingdom">
+      <label for="nationChoice4">
+      Earth Kingdom
+      </label><br>
+  </div>
+
+  <div id = "chooseCharacter">
+    <label for="chooseCharact">
+    Choose a Character:
+    </label>
+    <br>
+
+    <select name="charact" id="character">
+      <option value="Aang">Aang</option>
+      <option value="Katara">Katara</option>
+      <option value="Sokka">Sokka</option>
+      <option value="Toph">Toph</option>
+      <option value="Suki">Suki</option>
+      <option value="Appa">Appa</option>
+      <option value="Zuko">Zuko</option>
+      <option value="Iroh">Iroh</option>
+      <option value="Azula">Azula</option>
+    </select>
+
+    <br>
+    <button>
+      Join Avatar
+    </button>
+  </div>  
+</form>
+
+  <br>
+
+
+<form action="/">
+  <button class="btn btn-danger">
+  Exit
+  </button>
+</form> 
+</body>
+
+<%- include("partials/footer.ejs") %>

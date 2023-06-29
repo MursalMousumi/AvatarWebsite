@@ -1,0 +1,54 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/nav.ejs') %>
+
+<script src="/js/elements.js"></script>
+
+<header>
+<h1>Avatar: The Last Airbender</h1>
+<h2>Welcome!<h2>
+</header>
+
+<body id = "mainPage">
+
+
+  <form action="/profile" method="GET">
+   <button> Profile </button>
+  </form>
+
+    </select>
+  </form>
+  
+  <div class="container mt-3">
+
+
+  <form action="/elements" method="GET" >
+   <button id="elementBut"> Element Facts </button>
+  </form>
+
+  <form action="/facts" method="GET">
+   <button  id="factBut"> Character Facts </button>
+  </form>
+
+  <br>
+
+    <h3 id = "randCharHeader">Random Character!</h3>
+  
+
+
+  <button type="button" class="btn btn-outline-info" data-bs-toggle="popover" title="Random Character" id="randCharButton">Click Me!</button>
+
+</div>
+
+
+
+
+
+<% if (typeof loginError != "undefined" && loginError) { %>
+  <h3 class="error">Wrong credentials!</h3>
+<% }%>
+
+</body>
+
+
+  
+<%- include("partials/footer.ejs") %>

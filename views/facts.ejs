@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+<%- include('partials/nav.ejs') %>
+
+<body id="elements">
+
+<h1> Character Facts</h1>
+
+<div class = "whiteBackground">
+
+    <% for (i=0; i < facts.length; i++) { %>
+         <%= facts[i].name %> <br>
+         <%= facts[i].fact %><br>
+         <br>
+    <% } %>     
+</body>
+</div>
+
+<%- include("partials/footer.ejs") %>
