@@ -1,0 +1,52 @@
+{
+  "_from": "@shah-a/atla-quotes",
+  "_id": "@shah-a/atla-quotes@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-LsqF++ApVwzE86CGE2C3GoIzF62yjHyuVJ2q9vjqHkSDZ37poQvdZeVuFzUEz++OBZ9TQSWZwbnquGbyAqAfIw==",
+  "_location": "/@shah-a/atla-quotes",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@shah-a/atla-quotes",
+    "name": "@shah-a/atla-quotes",
+    "escapedName": "@shah-a%2fatla-quotes",
+    "scope": "@shah-a",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@shah-a/atla-quotes/-/atla-quotes-1.0.2.tgz",
+  "_shasum": "107234cc744280d92d6f19c7cf8f1dff4658e234",
+  "_spec": "@shah-a/atla-quotes",
+  "_where": "/home/runner/FinalProject",
+  "author": {
+    "name": "Ali Shah"
+  },
+  "bugs": {
+    "url": "https://github.com/shah-a/bew2.1-05-node-module-challenge/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A simple node module that returns random quotes from various `Avatar: The Last Airbender` scenes.",
+  "homepage": "https://github.com/shah-a/bew2.1-05-node-module-challenge#readme",
+  "keywords": [
+    "Avatar",
+    "Quotes"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "@shah-a/atla-quotes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shah-a/bew2.1-05-node-module-challenge.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}
